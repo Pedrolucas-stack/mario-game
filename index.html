@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <title>Mario Jump</title>
+</head>
+
+<body>
+
+    <div class="game-board">
+        <div class="pause-button">
+            <button id="pauseButton">Pause</button>
+        </div>
+        <div class="score" id="score">Pontuação: 0</div>
+        <img src="./images/clouds.png" class="clouds">
+        <img src="./images/mario.gif" class="mario">
+        <img src="./images/pipe.png" class="pipe">
+    </div>
+
+    <div class="game-start">
+        <img class="title" src="./images/MarioTitle.svg" alt="">
+        <button onclick="startGame()">Iniciar</button>
+        <div class="instrucoes">
+            <ul>Istruções para usuários de PC's:</ul>
+            <li>Clique em "Enter" para iniciar/reiniciar.</li>
+            <li>Clique em "Espaço" para pular.</li>
+            <li>Clique em "P" para pausar/retomar. </li>
+        </div>
+    </div>
+
+    <div class="game-pause">
+        <h1>Jogo Pausado</h1>
+        <button onclick="pauseGame()">Continuar?</button>
+    </div>
+
+    <div class="game-over">
+        <h1>Você perdeu!</h1>
+        <button onclick="restartGame()">Reiniciar?</button>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 120px solid #39943c;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#049CD8, #eaf3f7);
+}
+
+.pause-button {
+    display: none;
+}
+
+button {
+    background: #39943c;
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    right: 46vw;
+    top: 50vh;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+button:hover {
+    border: 2px solid #39943c;
+    background: none;
+    color: #39943c;
+}
+
+.title{
+    width: 28.125rem;
+}
+
+.game-start {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.795);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid #252525;
+    gap: 25px;
+}
+
+.game-start h1 {
+    font-size: 3rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+
+.game-start ul {
+    color: #E52521;
+}
+
+.instrucoes {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.game-pause {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.795);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid #049CD8;
+    gap: 25px;
+}
+
+.game-pause h1 {
+    font-size: 3rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.game-over {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.815);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid #E52521;
+    gap: 25px;
+}
+
+.game-over h1 {
+    font-size: 3rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #E52521;
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem;
+    margin: 15px 0 0 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 5rem;
+    right: -5rem;
+}
+
+.mario {
+    width: 9.375rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 34.375rem;
+    animation: clouds-animation 20s infinite linear;
+}
+
+/* Animações */
+.pipe-animation {
+    animation: pipe-animation 2s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}

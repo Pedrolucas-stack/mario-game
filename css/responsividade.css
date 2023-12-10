@@ -1,0 +1,159 @@
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px) {
+        .score {
+            margin-top: 50px;
+        }
+
+        .title{
+            width: 20rem;
+        }
+        
+
+        .pause-button {
+            display: block;
+        }
+
+        .game-board {
+            border-bottom: 40px solid #39943c;
+        }
+
+        .clouds {
+            width: 26rem;
+        }
+
+        .pipe {
+            width: 3.938rem;
+        }
+
+        @keyframes pipe-animation {
+            from {
+                right: -490px;
+            }
+
+            to {
+                right: 100%;
+            }
+        }
+
+        @keyframes jump {
+
+            0% {
+                bottom: 0;
+            }
+
+            40% {
+                bottom: 220px;
+            }
+
+            50% {
+                bottom: 220px;
+            }
+
+            60% {
+                bottom: 220px;
+            }
+
+            100% {
+                bottom: 0px;
+            }
+        }
+
+        @keyframes clouds-animation {
+            from {
+                right: -360px;
+            }
+
+            to {
+                right: 100%;
+            }
+        }
+
+    }
+
+    /* Estilos para tablets */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        /* Estilos para tablets */
+
+        .title{
+            width: 35rem;
+        }
+        .game-start {
+            font-size: 1.563rem;
+        }
+
+        .game-start h1 {
+            font-size: 4.688rem;
+
+        }
+
+        .game-pause h1 {
+            font-size: 4.688rem;
+
+        }
+
+        .pause-button {
+            display: block;
+        }
+
+        .game-over h1 {
+            font-size: 4.688rem;
+
+        }
+
+        button {
+            font-size: 2.188rem;
+        }
+
+        .score {
+            margin-top: 50px;
+            font-size: 3.125rem;
+        }
+
+        .clouds {
+            width: 40.625rem;
+        }
+
+        @keyframes pipe-animation {
+            from {
+                right: -500px;
+            }
+
+            to {
+                right: 100%;
+            }
+        }
+
+        @keyframes jump {
+
+            0% {
+                bottom: 0;
+            }
+
+            40% {
+                bottom: 225px;
+            }
+
+            50% {
+                bottom: 225px;
+            }
+
+            60% {
+                bottom: 225px;
+            }
+
+            100% {
+                bottom: 0px;
+            }
+        }
+
+        @keyframes clouds-animation {
+            from {
+                right: -630px;
+            }
+
+            to {
+                right: 100%;
+            }
+        }
+
+    }
